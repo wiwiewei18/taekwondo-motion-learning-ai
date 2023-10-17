@@ -27,7 +27,7 @@ def create_app(test_config=None):
     def index():
         return 'Taekwondo Motion Learning backend app!'
         
-    # from . import image_classification
-    # app.register_blueprint(image_classification.bp)
+    from . import image_classification
+    app.register_blueprint(image_classification.bp)
 
     return app

@@ -30,6 +30,7 @@ To get started, follow these steps:
 > .venv\Scripts\activate
 > pip install Flask
 > pip install flask_cors
+> pip install ultralytics
 ```
 
 - Train the machine learning model:
