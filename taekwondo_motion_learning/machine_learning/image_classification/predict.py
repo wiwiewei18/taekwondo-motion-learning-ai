@@ -8,4 +8,7 @@ def classifyImage(image):
     classificationNames = results[0].names
     probs = results[0].probs.data.tolist()
 
-    return classificationNames[np.argmax(probs)]
+    return {
+        "result": classificationNames[np.argmax(probs)],
+        "percentage": probs[np.argmax(probs)]*100
+    }
